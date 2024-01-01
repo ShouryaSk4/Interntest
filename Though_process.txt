@@ -1,0 +1,21 @@
+1:Connecting to a MongoDB database to access the corpus of papers.
+
+2:Extracting and cleaning relevant text fields, focusing on "transcription" and "title".]
+
+3:Creating semantic embeddings for each document using InstructEmbeddings, enabling efficient retrieval based on meaning.
+
+4:Storing embeddings in FAISS for fast similarity-based search.
+
+5:Loading the Excel sheet and identifying empty cells.
+
+6:Crafting contextual queries from row and column headings for each empty cell.
+
+7:Retrieving relevant documents from the FAISS index using the queries.
+
+8:Constructing comprehensive prompts that combine queries, retrieved snippets, and additional context, for the cases where here is no data in the corpus 
+
+9:Querying a large language model (Llama-2-7B-Chat-GGML) with these prompts to generate informative responses.
+
+10:Filling the empty cells in the Excel sheet with the generated responses.
+
+11:Saving the completed Excel file with filled cells.
